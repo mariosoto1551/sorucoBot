@@ -6,5 +6,5 @@ export interface Message{
 
 
 export enum MessageType{
-  MyMessage, HisMessage,
+  MyMessage='mine', HisMessage='him',
 }

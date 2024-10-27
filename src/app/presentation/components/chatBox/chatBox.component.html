@@ -1,0 +1,9 @@
+  <div class="space-y-4">
+    @for (message of messageList(); track $index) {
+      @if (message.messageType=='mine') {
+        <app-my-message-bubble [message]="message"></app-my-message-bubble>
+      }@else {
+        <app-his-message-bubble [message]="message"></app-his-message-bubble>
+      }
+    }
+  </div>
